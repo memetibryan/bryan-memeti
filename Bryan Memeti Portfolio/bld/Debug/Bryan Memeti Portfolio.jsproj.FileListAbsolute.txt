@@ -1,0 +1,13 @@
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bin\Debug\resources.pri
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bin\Debug\AppxManifest.xml
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bin\Debug\Bryan Memeti Portfolio.build.appxrecipe
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\priconfig.xml.intermediate
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\layout.resfiles.intermediate
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\resources.resfiles.intermediate
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\pri.resfiles.intermediate
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\priconfig.xml
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\layout.resfiles
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\resources.resfiles
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\pri.resfiles
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\LanguageQualifiers.txt
+c:\users\dell\documents\visual studio 2012\Projects\Bryan Memeti Portfolio\Bryan Memeti Portfolio\bld\Debug\ProjectArchitectures.txt
