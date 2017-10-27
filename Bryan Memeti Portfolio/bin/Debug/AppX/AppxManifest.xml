@@ -10,8 +10,8 @@
   <Identity Name="d5649ce9-6397-4df3-8df9-88ee6dd2aa38" Version="1.0.0.0" Publisher="CN=DELL" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Bryan Memeti Portfolio</DisplayName>
-    <PublisherDisplayName>DELL</PublisherDisplayName>
-    <Logo>images\storelogo.png</Logo>
+    <PublisherDisplayName>Bryan Memeti</PublisherDisplayName>
+    <Logo>images\me.jpg</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
@@ -22,9 +22,9 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Bryan Memeti Portfolio" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Bryan Memeti Portfolio" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="images\splashscreen.png" />
+      <VisualElements DisplayName="Bryan Memeti Portfolio" Logo="images\me.png" SmallLogo="images\smalllogo.png" Description="Bryan Memeti Portfolio" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="Bryan Memeti" />
+        <SplashScreen Image="images\me.jpg" />
       </VisualElements>
     </Application>
   </Applications>
