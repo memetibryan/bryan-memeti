@@ -1,65 +1,348 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.6.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.6.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.6.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.6.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.6.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
+<head>
+    <meta charset="utf-8" />
+    <title>Bryan Memeti</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bryan Memeti Personal Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <!-- my app links -->
+    <link rel="shortcut icon" href="./images/me.jpg">
+    <link href="../css/default.css" rel="stylesheet" />
+    <!-- other links -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCFx4IV-US_Ys3FaIK6Q-6x62D1fH8faWA",
+        authDomain: "memetibryan-24a2d.firebaseapp.com",
+        databaseURL: "https://memetibryan-24a2d.firebaseio.com",
+        projectId: "memetibryan-24a2d",
+        storageBucket: "memetibryan-24a2d.appspot.com",
+        messagingSenderId: "1085282432852"
+    };
+    firebase.initializeApp(config);
     </script>
-  </body>
+</head>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a onClick="document.getElementById('projects').scrollIntoView();">My Projects</a>
+        <a onClick="document.getElementById('skills').scrollIntoView();">My Skills</a>
+        <a onClick="document.getElementById('contacts').scrollIntoView();">Contacts</a>
+        <a onClick="document.getElementById('achievements').scrollIntoView();">Achievements</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script>
+    /*navbar*/
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</header>
+
+<body>
+    <!-- Header / Home-->
+    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <br>
+            <h2 class="w3-jumbo">Bryan Memeti</h2>
+            <p>A Full Stack Software Developer.</p>
+            <hr>
+            <p class="w3-xlarge">
+                <a href="pdf.html" .style.display='block' class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:3px 40px">View and Download CV</a>
+            </p>
+        </div>
+    </header>
+    <hr>
+    <!--projects -->
+    <div id="projects">
+        <div class="container-fluid ">
+            <p class="w3-large w3-center w3-padding-16"><b>My Projects</b></p>
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="card ">
+                        <img src="../images/forex-kenya.png" alt="forex kenya" style="width:100%">
+                        <h2><b>Forex Arena Kenya</b></h2>
+                        <p><i>A platform for forex trading in Kenya. The web application offers services to users as access to upcoming forex competitions, if at all one is new to forex trading, there is an online e-book for forex trading beginners which can also be downloaded and accessed offline. This website offers such knowledge on forex trading making it forex trading easy to learn unlike if one was to start a whole new course on forex trading which would be time consuming.</i></p>
+                        <p>
+                            <a href="https://forex-competition.herokuapp.com" class="button ">View</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="card ">
+                        <img src="./images/ava.png" alt="ava" style="width:100%">
+                        <h2><b>AVA</b></h2>
+                        <p><i>Ava is a web virtual assistant that works like an Artificial Intelligent bot.</i></p>
+                        <p>
+                            <a href="https://the-assistant.herokuapp.com/" class="button">Interact with AVA</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="card ">
+                        <img src="./images/notify.png" alt="notify" style="height:336px; width:100%">
+                        <h2><b>Notifier</b></h2>
+                        <p><i>Notifier is a web application that offers messaging services to companies and their subscribers or followers.</i></p>
+                        <p>
+                            <a href="https://notifier-7395b.firebaseapp.com/" class="button">Visit</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="card ">
+                        <img src="./images/go-fish.jpg" alt="go-fish game" style="width:100%">
+                        <h2><b>Go-Fish Game</b></h2>
+                        <p><i>A web based cards-game that involves two players. The idea behind this web game was tyo create the fun for card lovers who don't have the access to cards and would like to play or have fun. The game is user friendly and awesome to play. Get a partner and play now!!</i></p>
+                        <p>
+                            <a href="https://bryan-memeti-go-fish-game.herokuapp.com/" class="button">Play!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--fixed button -->
+    <div id="mybutton">
+        <a class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" onClick="document.getElementById('myTopnav').scrollIntoView();">Back Top</a>
+    </div>
+    <!--skills -->
+    <div id="skills">
+        <p class="w3-large w3-center w3-padding-16"><b>My Skills</b></p>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop"></i>Ruby on Rails</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge">20+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">50+</span>
+                <br> Meetings
+            </div>
+        </div>
+        <br>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop "></i>Databases (Postgres and MySQL)</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">35+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">5+</span>
+                <br> Meetings
+            </div>
+        </div>
+        <br>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop "></i>HTML5</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">70+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">17+</span>
+                <br> Meetings
+            </div>
+        </div>
+        <br>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop "></i>CSS, Materialize and Bootstrap</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">60+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">15+</span>
+                <br> Meetings
+            </div>
+        </div>
+        <br>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop "></i>Ruby with Sinatra</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">20+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">50+</span>
+                <br> Meetings
+            </div>
+        </div>
+        <br>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop "></i>jQuery</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">7+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">2+</span>
+                <br> Meetings
+            </div>
+        </div>
+        <br>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop "></i>EmberJs</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">10+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">2+</span>
+                <br> Meetings
+            </div>
+        </div>
+        <br>
+        <p class="w3-wide ">
+            <i class="fa fa-laptop "></i>Angular2</p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">4+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section ">
+                <span class="w3-xlarge ">2+</span>
+                <br> Meetings
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Contact information -->
+    <div id="contacts">
+        <div class="w3-container w3-padding-64 w3-pale-red w3-center" id="personal">
+            <div class="w3-content">
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <img src="./images/owner.jpg" class="img-circle" , width="310px" , height="260px">
+                    </div>
+                    <div class="w3-half">
+                        <h3>Contact</h3>
+                        <form class="row s18">
+                            <div class="row">
+                                <div class="col s6">
+                                    <label for="icon_prefix">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <h5>Bryan Memeti</h5>
+                                    </label>
+                                </div>
+                                <div class="col s6">
+                                    <label for="icon_telephone">
+                                        <i class="material-icons prefix">phone</i>
+                                        <h5>+(254) 704 830 480</h5>
+                                    </label>
+                                </div>
+                                <div class="col s6">
+                                    <label for="icon_mail">
+                                        <i class="material-icons prefix">email</i>
+                                        <h5>memetibryan@gmail.com</h5>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="icons">
+                <p>
+                    <span id="outer "><b>Social Media</b></span>
+                </p>
+                <a href="https://www.linkedin.com/in/bryan-memeti-71100b148/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/memetibryan" class="fa fa-github" aria-hidden="true"></a>
+                <a href="https://moringaschool.slack.com/team/memetibryan/" class="fa fa-slack"></a>
+                <a href="https://twitter.com/bryan_memeti" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCvnm6ZuTTJzN87pf3ay_Oig" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <!-- my achievements -->
+    <div id="achievements">
+        <p class="w3-large w3-center w3-padding-16"><b>My Achievements</b></p>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">30+</span>
+                <br> Partners
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">100+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge ">30+</span>
+                <br> Happy Clients
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">90+</span>
+                <br> Meetings
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- suggestion section -->
+    <div id="suggestions">
+        <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+            <h1>Have any suggestion?</h1>
+            <p class="w3-large">Kindly feel free to drop any suggestions</p>
+            <p class="w3-xlarge">
+                <button onclick="document.getElementById( 'id01').style.display='block' " class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Suggestion Box</button>
+            </p>
+        </div>
+    </div>
+    <!-- suggestion modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+            <div class="w3-container w3-white w3-center">
+                <h2 class="w3-wide">Welcome to the suggestion box</h2>
+                <p>Fill in your name</p>
+                <form>
+                    <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+                </form>
+                <p>Whats your suggestion?</p>
+                <form>
+                    <input class="w3-input w3-border" type="text" placeholder="Suggestion(s)" name="suggestion">
+                </form>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <button onclick="document.getElementById( 'id01').style.display='none' " type="button" class="w3-button w3-block w3-red">Send</button>
+                    </div>
+                    <div class="w3-half">
+                        <a href="#" onclick="document.getElementById( 'id01').style.display='none' " type="button" class="w3-button w3-block w3-blue">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            <span id="Span1">@2017/2018 Bryan Memeti</span>
+        </p>
+    </div>
+</body>
+
 </html>
