@@ -5,7 +5,4 @@
   "engines": {
     "node": "12.10.0"
   }
-  "scripts": {
-  "start": "node server.js"
-}
 }
