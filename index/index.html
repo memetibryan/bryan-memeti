@@ -8,7 +8,6 @@
     <meta name="description" content="Bryan Memeti Personal Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <!-- my app links -->
-    <link rel="shortcut icon" href="./images/me.jpg">
     <link href="./../css/default.css" rel="stylesheet" />
     <!-- other links -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script> -->
     <!-- <script>
     // Initialize Firebase
     var config = {
@@ -40,7 +39,7 @@
         <a onClick="document.getElementById('skills').scrollIntoView();">My Skills</a>
         <a onClick="document.getElementById('contacts').scrollIntoView();">Contacts</a>
         <a onClick="document.getElementById('achievements').scrollIntoView();">Achievements</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a onClick="document.getElementById('suggestions').scrollIntoView();">Suggestion Box</a>
     </div>
     <script>
     /*navbar*/
@@ -60,8 +59,8 @@
     <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
         <div class="w3-display-middle w3-text-white w3-center">
             <br>
-            <h2 class="w3-jumbo">Bryan Memeti</h2>
-            <p>A Full Stack Software Developer</p>
+            <h2 class="w3-jumbo">Bryan Memeti Tawai</h2>
+            <p>A Full Stack Software Developer, Applied Mathematician</p>
             <hr>
             <p class="w3-xlarge">
                 <a style.display='block' class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:3px 40px">Welcome to my web Page</a>
@@ -76,7 +75,7 @@
             <div class="row ">
                 <div class="col-md-6 ">
                     <div class="card ">
-                        <img src="../images/forex-kenya.png" alt="forex kenya" style="width:100%">
+                        <img src="../images/forex-kenya.png" alt="forex kenya" style="max-width:100%;height:auto;">
                         <h2><b>Forex Arena Kenya</b></h2>
                         <p><i>A platform for forex trading in Kenya. The web application offers services to users as access to upcoming forex competitions, if at all one is new to forex trading, there is an online e-book for forex trading beginners which can also be downloaded and accessed offline. This website offers such knowledge on forex trading making it forex trading easy to learn unlike if one was to start a whole new course on forex trading which would be time consuming.</i></p>
                         <p>
@@ -86,7 +85,7 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="card ">
-                        <img src="./../images/ava.png" alt="ava" style="width:100%">
+                        <img src="./../images/ava.png" alt="ava" style="max-width:100%;height:auto;">
                         <h2><b>AVA</b></h2>
                         <p><i>Ava is a web virtual assistant that works like an Artificial Intelligent bot.</i></p>
                         <p>
@@ -99,7 +98,7 @@
             <div class="row ">
                 <div class="col-md-6 ">
                     <div class="card ">
-                        <img src="./../images/notify.png" alt="notify" style="height:336px; width:100%">
+                        <img src="./../images/notify.png" alt="notify" style="max-width:100%;height:auto;">
                         <h2><b>Notifier</b></h2>
                         <p><i>Notifier is a web application that offers messaging services to companies and their subscribers or followers.</i></p>
                         <p>
@@ -109,11 +108,11 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="card ">
-                        <img src="./../images/go-fish.jpg" alt="go-fish game" style="width:100%">
+                        <img src="./../images/go-fish.jpg" alt="go-fish game" style="max-width:100%;height:auto;">
                         <h2><b>Go-Fish Game</b></h2>
                         <p><i>A web based cards-game that involves two players. The idea behind this web game was tyo create the fun for card lovers who don't have the access to cards and would like to play or have fun. The game is user friendly and awesome to play. Get a partner and play now!!</i></p>
                         <p>
-                            <a href="https://bryan-memeti-go-fish-game.herokuapp.com/" class="button">Play!</a>
+                            <a href="https://bryan-memeti-go-fish-game.herokuapp.com/" class="button">Play Now!</a>
                         </p>
                     </div>
                 </div>
@@ -123,11 +122,11 @@
     <hr>
     <!--fixed button -->
     <div id="mybutton">
-        <a class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" onClick="document.getElementById('myTopnav').scrollIntoView();">Back Top</a>
+        <a class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" onClick="document.getElementById('myTopnav').scrollIntoView();">Back to the top</a>
     </div>
     <!--skills -->
     <div id="skills">
-        <p class="w3-large w3-center w3-padding-16"><b>My Skills</b></p>
+        <p class="w3-large w3-center w3-padding-16"><b>Enlisted are some of my Skills</b></p>
         <p class="w3-wide ">
             <i class="fa fa-laptop"></i>Ruby on Rails</p>
         <div class="w3-row w3-center w3-dark-grey w3-padding-4">
@@ -136,7 +135,7 @@
                 <br> Projects Done
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">50+</span>
+                <span class="w3-xlarge">5+</span>
                 <br> Meetings
             </div>
         </div>
@@ -145,11 +144,11 @@
             <i class="fa fa-laptop "></i>Databases (Postgres and MySQL)</p>
         <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">35+</span>
+                <span class="w3-xlarge ">10+</span>
                 <br> Projects Done
             </div>
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">5+</span>
+                <span class="w3-xlarge ">6+</span>
                 <br> Meetings
             </div>
         </div>
@@ -158,7 +157,7 @@
             <i class="fa fa-laptop "></i>HTML5</p>
         <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">70+</span>
+                <span class="w3-xlarge ">50+</span>
                 <br> Projects Done
             </div>
             <div class="w3-quarter w3-section ">
@@ -171,11 +170,11 @@
             <i class="fa fa-laptop "></i>CSS, Materialize and Bootstrap</p>
         <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">60+</span>
+                <span class="w3-xlarge ">30+</span>
                 <br> Projects Done
             </div>
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">15+</span>
+                <span class="w3-xlarge ">3+</span>
                 <br> Meetings
             </div>
         </div>
@@ -184,11 +183,11 @@
             <i class="fa fa-laptop "></i>Ruby with Sinatra</p>
         <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">20+</span>
+                <span class="w3-xlarge ">2+</span>
                 <br> Projects Done
             </div>
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">50+</span>
+                <span class="w3-xlarge ">4+</span>
                 <br> Meetings
             </div>
         </div>
@@ -210,7 +209,7 @@
             <i class="fa fa-laptop "></i>EmberJs</p>
         <div class="w3-row w3-center w3-dark-grey w3-padding-4 ">
             <div class="w3-quarter w3-section ">
-                <span class="w3-xlarge ">10+</span>
+                <span class="w3-xlarge ">1+</span>
                 <br> Projects Done
             </div>
             <div class="w3-quarter w3-section ">
@@ -239,7 +238,7 @@
             <div class="w3-content">
                 <div class="w3-row">
                     <div class="w3-half">
-                        <img src="./../images/owner.jpg" class="img-circle" , width="310px" , height="260px">
+                        <img src="./../images/owner.jpg" class="img-square" , style="max-width:100%;height:auto;">
                     </div>
                     <div class="w3-half">
                         <h3>Contact</h3>
@@ -248,7 +247,7 @@
                                 <div class="col s6">
                                     <label for="icon_prefix">
                                         <i class="material-icons prefix">account_circle</i>
-                                        <h5>Bryan Memeti</h5>
+                                        <h5>Bryan Memeti Tawai</h5>
                                     </label>
                                 </div>
                                 <div class="col s6">
@@ -271,7 +270,7 @@
             <hr>
             <div class="icons">
                 <p>
-                    <span id="outer "><b>Social Media</b></span>
+                    <span id="outer "><b>My Social Media spaces</b></span>
                 </p>
                 <a href="https://www.linkedin.com/in/bryan-memeti-71100b148/" class="fa fa-linkedin"></a>
                 <a href="https://github.com/memetibryan" class="fa fa-github" aria-hidden="true"></a>
@@ -286,19 +285,19 @@
         <p class="w3-large w3-center w3-padding-16"><b>My Achievements</b></p>
         <div class="w3-row w3-center w3-dark-grey w3-padding-16">
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">30+</span>
+                <span class="w3-xlarge">3+</span>
                 <br> Partners
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">100+</span>
+                <span class="w3-xlarge">80+</span>
                 <br> Projects Done
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge ">30+</span>
+                <span class="w3-xlarge ">5+</span>
                 <br> Happy Clients
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">90+</span>
+                <span class="w3-xlarge">20+</span>
                 <br> Meetings
             </div>
         </div>
@@ -340,7 +339,7 @@
     </div>
     <div class="footer">
         <p>
-            <span id="Span1">@2017/2018 Bryan Memeti</span>
+            <span id="Span1">@memetibryan</span>
         </p>
     </div>
 </body>
