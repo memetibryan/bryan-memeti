@@ -1,12 +1,9 @@
-const http = require('http');
-const port = process.env.PORT || 3000
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  "./index/index.html"
-});
-
-server.listen(port,() => {
-  console.log(`Server running at port `+port);
-});
+// var http = require('http'); 
+// var url = require('url'); 
+// http.createServer(function (req, res) { 
+//  console.log("Request: " + req.method + " to " + req.url); 
+//  res.writeHead(200, "OK"); 
+//  "index.html"
+//  res.end(); 
+// }).listen(8080); 
+// console.log("Ready on port 8080");
