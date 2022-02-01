@@ -1,7 +1,4 @@
-﻿body {
-}
-
-@media screen and (-ms-view-state: fullscreen-landscape) {
+﻿@media screen and (-ms-view-state: fullscreen-landscape) {
 }
 
 @media screen and (-ms-view-state: filled) {
@@ -38,7 +35,7 @@ body {
     padding: 0;
     margin: 0;
     width: auto;
-    height: auto;
+    height: 100%;
 }
 
 .body {
@@ -81,7 +78,6 @@ img-circle {
 
 
 /* Style all font awesome icons */
-
 .fa {
     padding: 18px;
     padding-right: 20px;
@@ -93,18 +89,11 @@ img-circle {
 
 
 /* Add a hover effect if you want */
-
 .fa:hover {
     opacity: 0.7;
 }
 
-
-
-/* Set a specific color for each brand */
-
-
 /* Facebook */
-
 .fa-facebook {
     background: #3B5998;
     color: white;
@@ -113,7 +102,6 @@ img-circle {
 
 
 /* Twitter */
-
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -151,7 +139,6 @@ img-circle {
 
 
 /* Dropdown Button */
-
 .linkbtn {
     background-color: #4CAF50;
     color: white;
@@ -161,10 +148,7 @@ img-circle {
     cursor: pointer;
 }
 
-
-
 /* Dropdown button on hover & focus */
-
 .linkbtn:hover,
 .linkbtn:focus {
     background-color: #3e8e41;
@@ -228,13 +212,10 @@ img-circle {
     background-attachment: scroll;
 }}
 
-body,
-h1,
-h2 {
+h1, h2 {
     font-family: "Raleway", sans-serif;
 }
 
-body,
 html {
     height: 100%;
 }
@@ -248,10 +229,6 @@ p {
     background-position: center;
     background-size: cover;
     background-image: url("../images/mac.jpg");
-}
-
-body {
-    margin: 0;
 }
 
 .topnav {
@@ -356,7 +333,6 @@ body {
 }
        
 /*fixed button*/
-
 .feedback {
     background-color: #31B0D5;
     color: white;
